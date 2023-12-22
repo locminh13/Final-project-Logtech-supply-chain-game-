@@ -58,7 +58,7 @@ def game_play():
         if canvas.coords(cloud)[0]<-70:
             canvas.delete(cloud)
             cloud=canvas.create_image(900,50,anchor=NW,image=img[1])
-            canvas.update()
+        canvas.update()
     def moveSun():
         global sun
         canvas.move(sun,-0.5,0)
